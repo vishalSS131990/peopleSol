@@ -6,14 +6,14 @@ import FlashMessage from 'react-native-flash-message';
 import { LogBox } from 'react-native';
 import Navigator from './src/navigations';
 
-LogBox.ignoreLogs(['warnings...']);
+LogBox.ignoreLogs(['warnings....']);
 LogBox.ignoreAllLogs();
 
 const App = () => {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <Navigator />
+        <Navigator /> 
         <FlashMessage position="bottom" duration={2000} />
       </PersistGate>
     </Provider>
